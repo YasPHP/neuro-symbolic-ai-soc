@@ -13,6 +13,7 @@ from PIL import Image
 from tqdm.notebook import tqdm
 
 
+# TRAIN DETECTOR
 def train_detector(train_data, filename='detector.svm'):
     '''Trains an object detector (HOG + SVM) and saves the model'''
     
@@ -36,7 +37,7 @@ def train_detector(train_data, filename='detector.svm'):
     detector.save(filename)
     print(f'Saved the model to {filename}')
 
-    
+# SHAPE CLASSIFIER
 class ShapeClassifier(nn.Module):
     '''Simple CNN based Image Classifier for Shapes (circle | rectangle)'''
     def __init__(self):
@@ -104,6 +105,7 @@ class ShapeClassifier(nn.Module):
         # Save model
         torch.save(self.state_dict(), filename)
 
+# BINARIZE
 class Binarize(object):
     def __init__(self):
         '''Converts Grayscale to Binary (except white every other color is zeroed)'''
@@ -118,6 +120,7 @@ class Binarize(object):
         '''
         return (img_tensor > 0.95).float()
 
+# PERCEPTION PIPE
 class PerceptionPipe():
     '''
     Full Perception Pipeline i.e.
