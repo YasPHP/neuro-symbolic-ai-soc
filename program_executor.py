@@ -1,6 +1,7 @@
 import numpy as np
 import pandas as pd
 
+# DOMAIN SPECIFIC LANGUAGE CLASS
 class DSL():
     '''Domain Specific Language consisting of functions and relations'''
     def __init__(self):
@@ -65,6 +66,7 @@ class DSL():
         '''Checks if a position is on the top half or not'''
         return 'yes' if pos[1] < 112 else 'no'
 
+# EXECUTES PROGRAM
 class ProgramExecutor(DSL):
     '''Executes a given program'''
     def __init__(self):
