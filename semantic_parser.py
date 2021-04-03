@@ -8,6 +8,7 @@ from torchtext.data import Field, TabularDataset, BucketIterator
 import spacy
 from tqdm.notebook import tqdm
 
+# PREPROCESSOR CLASS
 class Preprocessor():
     '''Preprocessor for preparing Queries and Programs for Seq2Seq'''
     def __init__(self, train_csv):
@@ -20,6 +21,7 @@ class Preprocessor():
         # Preprocess
         self.train_data = self.preprocess(train_csv)
         
+    # TOKENIZER
     def tokenizer(self, text):
         tokens = [tok.text.lower() for tok in self.spacy_en.tokenizer(text)]
 
@@ -34,6 +36,7 @@ class Preprocessor():
 
         return updated_tokens
     
+    # PRE PROCESSING
     def preprocess(self, train_csv):
         '''Returns the Dataset'''
         
@@ -52,7 +55,7 @@ class Preprocessor():
         
         return train_data
     
-
+# SEQ2SEQ CLASS
 class Seq2Seq(nn.Module):
     '''Sequence to Sequence Model using Transformers'''
     def __init__(self,
@@ -90,12 +93,14 @@ class Seq2Seq(nn.Module):
         # Mount to device
         self.to(device)
         
+    # SRC SEQUENCE MASK
     def make_src_mask(self, src):
         '''Create padding mask for src sequence'''
         src_mask = src.transpose(0, 1) == self.src_pad_idx
         # (N, src_len)
         return src_mask.to(self.device)
     
+    # FORWARD PASSING
     def forward(self, src, trg):
         '''Forward pass'''
         src_seq_length, N = src.shape
@@ -128,6 +133,7 @@ class Seq2Seq(nn.Module):
         # output shape (trg_seq_len, N, trg_vocab_size)
         return out
     
+    # TRAIN MODEL
     def train_model(self, 
                     train_loader,
                     num_epochs,
@@ -185,6 +191,7 @@ class Seq2Seq(nn.Module):
         torch.save(self.state_dict(), filename)
     
     
+# SEMANTIC PARSER CLASS
 class SemanticParser():
     '''Full Pipeline for Semantic Parsing from Query -> Program'''
     def __init__(self, preprocessor, config, filename='models/semantic_parser.pth', device=None, max_len=20):
@@ -205,7 +212,7 @@ class SemanticParser():
         self.model = Seq2Seq(config, device)
         self.model.load_state_dict(torch.load(filename))
         
-        
+    # PREDICTING
     def predict(self, query):
         '''Predicts the Program, given a query'''
         # Tokenize
