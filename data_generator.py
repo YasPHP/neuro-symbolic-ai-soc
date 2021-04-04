@@ -6,11 +6,12 @@ import argparse
 import pandas as pd
 from tqdm import tqdm
 
+# SEED
 SEED = 10
 random.seed(SEED)
 np.random.seed(SEED)
 
-# Dataset Parameters
+# DATASET PARAMETERS
 img_size = 224
 size = 15
 question_size = 10 # 6 for one-hot vector of color, 1 for question type, 3 for question subtype
@@ -19,6 +20,7 @@ sub_q_type_idx = 7
 nb_questions = 10
 # Possibles Answers : [yes, no, rectangle, circle, 1, 2, 3, 4, 5, 6]
 
+# COLORS
 colors = [
     (0,0,255), # red
     (0,255,0), # green
