@@ -23,3 +23,11 @@ The basic idea behind using NSAI for VQA is parsing the visual scene into a symb
 - [The Neuro-Symbolic Concept Learner: Interpreting Scenes, Words, and Sentences From Natural Supervision](https://arxiv.org/abs/1904.12584)
 - [Seq2Seq_Transformer](https://github.com/aladdinpersson/Machine-Learning-Collection/blob/master/ML/Pytorch/more_advanced/seq2seq_transformer/seq2seq_transformer.py)
 - [Gesture Control](https://www.learnopencv.com/training-a-custom-object-detector-with-dlib-making-gesture-controlled-applications/)
+
+## People
+Kexin Yi
+Jiajun Wu
+Chuang Gan
+Antonio Torralba
+Pushmeet Kohli
+Joshua B. Tenenbaum
