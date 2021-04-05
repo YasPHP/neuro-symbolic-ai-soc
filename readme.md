@@ -29,8 +29,8 @@ The basic idea behind using NSAI for VQA is parsing the visual scene into a symb
 - [Gesture Control](https://www.learnopencv.com/training-a-custom-object-detector-with-dlib-making-gesture-controlled-applications/)
 
 ## People
-- Kexin Yi
-- Jiajun Wu
+- [Kexin Yi](https://github.com/kexinyi)
+- [Jiajun Wu](https://jiajunwu.com/)
 - [Chuang Gan](https://people.csail.mit.edu/ganchuang/)
 - [Antonio Torralba](https://www.csail.mit.edu/person/antonio-torralba)
 - Pushmeet Kohli
