@@ -8,9 +8,9 @@
 
 Recent advances in deep learning gave rise to highly expressive models achieving remarkable results on visual perception tasks such as object, action and scene recognition. However, it is widely accepted that in order to develop truly intelligent systems, we need to bridge the gap between perception and cognition. Highly cognitive tasks such as planning, abstracting, reasoning and explaining are typically associated with symbolic systems which do not scale to the complex high-dimensional visual world. The relatively new field of neuro-symbolic computation proposes to combine the strengths of deep models with symbolic approaches, by using the former to learn disentangled, interpretable, low-dimensional representations which significantly reduce the search space for symbolic approaches such as program synthesis (cf. [5,15]). Another reason to study the interplay between neural and symbolic approaches is related to human, and in particular infant, learning. While far from fully understood, there is an increasing body of evidence that similar mechanisms combining low-level perception with high level cognition are at play in the human brain [1,12].
 
-This tutorial will bring together researchers from computer vision, graphics, robotics, cognitive science, and developmental psychology to exchange ideas, share recent research results and applications in the emerging field of neuro-symbolic computation, focusing on computer vision.
+This [tutorial](http://nscv.csail.mit.edu/) will bring together researchers from computer vision, graphics, robotics, cognitive science, and developmental psychology to exchange ideas, share recent research results and applications in the emerging field of neuro-symbolic computation, focusing on computer vision.
 
-- [Full Playlist](https://www.youtube.com/watch?v=Opunfo422uQ&list=PLX0h2D8LfCPHtT0-u6xjYaGFPT6-3cLJ1&index=1)
+- watch the full playlist [here](https://www.youtube.com/watch?v=Opunfo422uQ&list=PLX0h2D8LfCPHtT0-u6xjYaGFPT6-3cLJ1&index=1)
 
 
 ## Sort-of-CLEVR Dataset
