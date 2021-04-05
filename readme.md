@@ -32,6 +32,6 @@ The basic idea behind using NSAI for VQA is parsing the visual scene into a symb
 - Kexin Yi
 - Jiajun Wu
 - [Chuang Gan](https://people.csail.mit.edu/ganchuang/)
-- Antonio Torralba
+- [Antonio Torralba](https://www.csail.mit.edu/person/antonio-torralba)
 - Pushmeet Kohli
 - Joshua B. Tenenbaum
