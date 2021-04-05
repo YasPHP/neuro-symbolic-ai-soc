@@ -1,7 +1,7 @@
 # Neuro-Symbolic AI for Visual Question Answering
 
 ## Model
-![NSAI VQA](https://discord.com/channels/792469912295440434/792469912295440438/828742534452740160)
+![NSAI VQA](https://cdn.discordapp.com/attachments/792469912295440438/828742534188630036/nsai.png)
 
 ## Sort-of-CLEVR Dataset
 
