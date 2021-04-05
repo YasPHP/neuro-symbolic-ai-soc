@@ -1,4 +1,8 @@
 # Neuro-Symbolic AI for Visual Question Answering
+
+## Model
+![NSAI VQA](https://discord.com/channels/792469912295440434/792469912295440438/828742534452740160)
+
 ## Sort-of-CLEVR Dataset
 
 Neuro-Symbolic AI allows us to combine Deep Learning’s superior pattern recognition abilities with the reasoning abilities of symbolic methods like program synthesis. This repository is an implementation of NSAI for Visual Question Answering on the Sort-of-CLEVR dataset using PyTorch. This implementation is inspired by the [Neuro-Symbolic VQA](https://arxiv.org/abs/1810.02338) paper by MIT-IBM Watson AI Lab.
